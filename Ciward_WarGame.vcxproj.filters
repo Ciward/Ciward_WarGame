@@ -44,5 +44,15 @@
     <ClInclude Include="Team.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="City.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

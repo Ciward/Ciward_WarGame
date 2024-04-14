@@ -1,5 +1,6 @@
 #pragma once
 
+
 class Weapon
 {
 protected:
@@ -11,9 +12,7 @@ protected:
 public:
     Weapon(){}
     Weapon(float damage1):damage(damage1) {}
-    void changeDamage(float damage1){damage = damage1*p/10;}
-    int getlive(){return live;}
-    void hurt(){live--;}
+    void changeDamage(float damage1){damage = damage1;}
     float getDamage(){return damage;}
     string getName(){return name;}
     
@@ -25,7 +24,7 @@ public:
     Sword(float damage1):Weapon(damage1) 
     {
         p=2;
-        live=1145141145;
+        live=114514;
         damage=int(damage1*p/10);
         name="sword";
         class_id=0;
