@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: 高级程序设计大作业——魔兽争霸程序实验报告（开发文档）
 cover: image-20230530160428875.png
@@ -212,3 +213,7 @@ drawtext(ss,&r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 
 ![image-20230530160428875](image-20230530160428875.png)
 
+=======
+# 大一下C++大作业魔兽世界
+gui版本
+>>>>>>> 75c80d302a00e633db7e79c64819ee85c4fe96a3
