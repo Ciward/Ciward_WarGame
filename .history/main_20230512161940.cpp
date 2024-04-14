@@ -56,7 +56,7 @@ int main() {
 			cotb++;
 			bluecount++;
 			bluecount %= 5;
-			if (cotb >= 5) {
+			if (cotr >= 5) {
 				blueTeam.stopGenerating(T);
 				blueTeam.is_stopped=true;
 				cot++;

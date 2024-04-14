@@ -37,8 +37,7 @@ int main() {
 	cout<<"Case:"<<n<<endl;
 	while(1){
 		int cotr = 0,cotb=0,cot=0;
-		if(!redTeam.is_stopped){
-			while (!redTeam.generateSpirit(T, redS[redcount])) {
+		while (!redTeam.generateSpirit(T, redS[redcount]) && !redTeam.is_stopped) {
 			cotr++;
 			redcount++;
 			redcount %= 5;
@@ -49,22 +48,18 @@ int main() {
 				break;
 			}
 		}
-		}
-		
-		if(!blueTeam.is_stopped){
-			while (!blueTeam.generateSpirit(T, blueS[bluecount])) {
+
+		while (!blueTeam.generateSpirit(T, blueS[bluecount]) && !blueTeam.is_stopped) {
 			cotb++;
 			bluecount++;
 			bluecount %= 5;
-			if (cotb >= 5) {
+			if (cotr >= 5) {
 				blueTeam.stopGenerating(T);
 				blueTeam.is_stopped=true;
 				cot++;
 				break;
 			}
 		}
-		}
-		
 		if (cot >= 2) break;
 		T++;
 		bluecount++;

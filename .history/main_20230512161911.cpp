@@ -52,11 +52,11 @@ int main() {
 		}
 		
 		if(!blueTeam.is_stopped){
-			while (!blueTeam.generateSpirit(T, blueS[bluecount])) {
+			while (!blueTeam.generateSpirit(T, blueS[bluecount]) && !blueTeam.is_stopped) {
 			cotb++;
 			bluecount++;
 			bluecount %= 5;
-			if (cotb >= 5) {
+			if (cotr >= 5) {
 				blueTeam.stopGenerating(T);
 				blueTeam.is_stopped=true;
 				cot++;

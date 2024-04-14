@@ -1,7 +1,7 @@
 #pragma once
 #include "Weapon.h"
 #include <iostream>
-#include <vector>
+
 #include <string>
 using namespace std;
 
@@ -16,7 +16,8 @@ public:
     int id;
     int class_id;
     static float maxlive;
-    
+    Weapon* weapon;
+    Weapon* weapon2;
     Team* team;
     vector<Weapon*> weapons;
     void hurt(float damage);

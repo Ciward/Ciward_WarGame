@@ -18,7 +18,7 @@ static float maxlive;
         weapons.push_back(getWeapon(id%3));
     }
     void print(){
-        cout<<"it has a "<< weapons[0]->getName()<<endl;
+        cout<<"it has a "<< weapon->getName()<<endl;
     }
  
 };

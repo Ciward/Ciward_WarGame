@@ -9,7 +9,7 @@ public:
     float morale;
     static float maxlive;
     void print(){
-        cout<<"it has a "<< weapon->getName();
+        cout<<"it has a "<< weapons[0]->getName();
         
         printf(", and its morale is %.2f\n", morale);
     }
@@ -18,7 +18,7 @@ public:
         class_id = 0;
         live = maxlive;
         name = "dragon";
-        weapon=getWeapon(id%3);
+        weapons.push_back(getWeapon(id%3));
         morale = morale1;
 
     }

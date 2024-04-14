@@ -15,10 +15,10 @@ static float maxlive;
         live = maxlive;
         class_id=2;
         name = "iceman";
-        weapons.push_back(getWeapon(id%3));
+        weapon=getWeapon(id%3);
     }
     void print(){
-        cout<<"it has a "<< weapons[0]->getName()<<endl;
+        cout<<"it has a "<< weapon->getName()<<endl;
     }
  
 };

@@ -31,7 +31,6 @@ public:
 
 Team::Team(int team_id1, string name1,int live1) : team_id(team_id1), name(name1),live(live1)
 {
-    is_stopped = false;
 }
 
 bool Team::generateSpirit(int timestamp,int spirit)
